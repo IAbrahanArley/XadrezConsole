@@ -1,0 +1,11 @@
+package chess;
+
+public interface GameState {
+    void start();
+    void movePiece(ChessPosition source, ChessPosition target);
+    void promotePawn(ChessPosition position, String promotionType);
+    boolean isCheck();
+    boolean isCheckmate();
+    boolean[][] possibleMoves();
+    Color getCurrentPlayer();
+}

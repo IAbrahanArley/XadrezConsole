@@ -1,0 +1,11 @@
+package chess;
+
+public interface GameState {
+    void start();
+    void promotePawn(ChessPosition position, String promotionType);
+    boolean testCheck(Color color);
+    boolean testCheckMate(Color color);
+    boolean[][] possibleMoves(ChessPosition sourcePosition);
+    
+    
+}
